@@ -12,6 +12,11 @@ setuptools.setup(
         "modwaveforms",
     ],
 
+     install_requires=[
+        "bilby",
+        "bilby_pipe",
+    ],
+
     classifiers=[
         "Programming Language :: Python :: 3.7",
     ],
