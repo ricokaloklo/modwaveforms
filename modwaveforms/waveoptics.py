@@ -32,6 +32,8 @@ vlaguerre = np.vectorize(laguerre)
 def F_pointlens(f,ML,y):
     """ Amplification function of a point lens
 
+    Follows definition of Eq.16 https://arxiv.org/abs/2005.10702
+
     Parameters
     ----------
     fs : float
