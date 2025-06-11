@@ -6,8 +6,8 @@ This package interfaces with [bilby](https://git.ligo.org/lscsoft/bilby) to gene
 
 Currently this package contains the following waveforms:
 
-- Strongly lensed images (including Morse phase)
-
+- Single and mutliple strongly lensed images (including Morse phase)
+- Fold and cusp caustics under the stationary phase approximation
 - Point lens mass in wave optics
 
 ## Installation
