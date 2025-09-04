@@ -10,6 +10,7 @@ setuptools.setup(
     description="Collection of modified waveforms for parameter estimation",
     packages=[
         "modwaveforms",
+        "modwaveforms.utils",
     ],
 
      install_requires=[
