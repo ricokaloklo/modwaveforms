@@ -2,8 +2,8 @@ import numpy as np
 import mpmath as mp
 from scipy.special import gamma
 from bilby.gw.source import *
-import utils.point_mass as pm
-from utils.constants import *
+from .utils import point_mass as pm
+from .utils.constants import *
 
 """ Point lens waveform """
 
