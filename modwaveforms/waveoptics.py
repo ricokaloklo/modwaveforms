@@ -117,8 +117,9 @@ def pointlens(frequency_array, mass_1, mass_2, luminosity_distance, a_1, tilt_1,
     )
 
     # Calculate the amplification factor
-    # complex conjugate because of different sign convention in the Fourier transform
-    F = F_pointlens(frequency_array,ML,y)
+    # complex conjugate because of different sign convention in the Fourier transform of 
+    # LALSuite (engineering) compared to the one used in wave optics (physics)
+    F = np.conjugate(F_pointlens(frequency_array,ML,y))
 
     wf["plus"] = wf["plus"]*F
     wf["cross"] = wf["cross"]*F
