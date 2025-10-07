@@ -10,8 +10,7 @@ setuptools.setup(
     description="Collection of modified waveforms for parameter estimation",
     packages=[
         "modwaveforms",
-        "modwaveforms.gwsignal",
-        "modwaveforms.fdsm",
+        "modwaveforms.utils",
     ],
     install_requires=[
         "numpy",
