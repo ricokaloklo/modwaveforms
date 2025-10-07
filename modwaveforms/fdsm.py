@@ -35,7 +35,7 @@ def two_images_BBH(frequency_array, mass_1, mass_2, luminosity_distance, a_1, ti
         frequency_array, mass_1, mass_2, luminosity_distance, a_1, tilt_1,
         phi_12, a_2, tilt_2, phi_jl, theta_jn, phase, **kwargs
     )
-    F_two_images = geomoptics.two_image_BBH(frequency_array, mu_rel, Delta_t, Delta_phase)
+    F_two_images = geomoptics.two_images_BBH(frequency_array, mu_rel, Delta_t, Delta_phase)
 
     wf["plus"] = wf["plus"]*F_two_images
     wf["cross"] = wf["cross"]*F_two_images
