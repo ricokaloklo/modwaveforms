@@ -1,6 +1,6 @@
 import setuptools
 
-verstr = "0.0.1"
+verstr = "0.1.0"
 
 setuptools.setup(
     name="modwaveforms",
@@ -10,16 +10,16 @@ setuptools.setup(
     description="Collection of modified waveforms for parameter estimation",
     packages=[
         "modwaveforms",
-        "modwaveforms.utils",
+        "modwaveforms.gwsignal",
+        "modwaveforms.fdsm",
     ],
-
-     install_requires=[
+    install_requires=[
+        "numpy",
+        "scipy",
+        "mpmath",
         "bilby",
         "bilby_pipe",
-    ],
-
-    classifiers=[
-        "Programming Language :: Python :: 3.7",
+        "lalsuite",
     ],
     python_requires='>=3.7',
 )
